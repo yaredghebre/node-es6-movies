@@ -118,4 +118,50 @@ const newEntries = entries.map((entry) => {
 
 // console.log(newEntries);
 
-// Creo funzione che riporta le entries
+// Creo funzione che riporta la media delle entries dato un genere
+const avgRating = (type, genre) => {
+  let count = 0;
+  let entriesCount = 0;
+
+  entries.map((el) => {
+    if (el.type === type && el.genre === genre) {
+      entriesCount++;
+      count += el.rating;
+    }
+  });
+  return `La media dei voti in base al genere ${genre} è di: ${
+    count / entriesCount
+  }`;
+};
+
+// console.log(avgRating("movie", "Drama"));
+
+// Creo funzione che riporti lista di tutti i generi senza ripetizioni
+const getGenreList = () => {
+  const genreList = [];
+
+  entries.forEach((entry) => {
+    const genres = entry.genre.split(", ");
+    genres.forEach((genre) => {
+      if (!genreList.includes(genre)) {
+        genreList.push(genre);
+      }
+    });
+  });
+  return genreList;
+};
+
+// console.log(getGenreList());
+
+// Creiamo una funzione che filtri i film in base ad un genere passato come argomento e ne ritorni
+// un array con all’interno il risultato della funzione toString() di ogni film.
+
+const newArrToStr = (genre) => {
+  const newArray = entries.filter((entry) => {
+    const genres = entry.genre.split(", ");
+    return genres.includes(genre);
+  });
+  return newArray;
+};
+
+// console.log(newArrToStr("Drama"));
