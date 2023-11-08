@@ -1,0 +1,27 @@
+{
+  "name": "es6-movies",
+  "version": "1.0.0",
+  "description": "Creating a pseudo-imdb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaredghebre/node-es6-movies.git"
+  },
+  "keywords": [
+    "class",
+    "node",
+    "constructor"
+  ],
+  "author": "Yared Ghebre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaredghebre/node-es6-movies/issues"
+  },
+  "homepage": "https://github.com/yaredghebre/node-es6-movies#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
