@@ -164,4 +164,4 @@ const newArrToStr = (genre) => {
   return newArray;
 };
 
-// console.log(newArrToStr("Drama"));
+console.log(newArrToStr("Drama"));
