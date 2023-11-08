@@ -134,8 +134,6 @@ const avgRating = (type, genre) => {
   }`;
 };
 
-// console.log(avgRating("movie", "Drama"));
-
 // Creo funzione che riporti lista di tutti i generi senza ripetizioni
 const getGenreList = () => {
   const genreList = [];
@@ -151,8 +149,6 @@ const getGenreList = () => {
   return genreList;
 };
 
-// console.log(getGenreList());
-
 // Creiamo una funzione che filtri i film in base ad un genere passato come argomento e ne ritorni
 // un array con all’interno il risultato della funzione toString() di ogni film.
 
@@ -164,4 +160,7 @@ const newArrToStr = (genre) => {
   return newArray;
 };
 
+// Ultima Milestone
+console.log(avgRating("movie", "Drama"));
+console.log(getGenreList());
 console.log(newArrToStr("Biography"));
