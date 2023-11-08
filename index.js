@@ -158,10 +158,10 @@ const getGenreList = () => {
 
 const newArrToStr = (genre) => {
   const newArray = entries.filter((entry) => {
-    const genres = entry.genre.split(", ");
+    const genres = entry.genre;
     return genres.includes(genre);
   });
   return newArray;
 };
 
-console.log(newArrToStr("Drama"));
+console.log(newArrToStr("Biography"));
